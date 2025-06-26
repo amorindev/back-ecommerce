@@ -2,6 +2,7 @@ package minio
 
 import (
 	"context"
+	"fmt"
 	"log"
 	"os"
 
@@ -64,10 +65,10 @@ func (client *MinioClient) CreateStorage() {
 
 	found, err := client.Client.BucketExists(context.Background(), bucketName)
 	if err != nil {
-		log.Fatalf("create Storage Bucket exists err: %v\n", err)
+		//log.Fatalf("create Storage Bucket exists err: %v\n", err)
 	}
 	if found {
-		//fmt.Printf("Bucket exists.\n")
+		fmt.Printf("Bucket exists.\n")
 	} else {
 		//fmt.Printf("Bucket does not exists.\n")
 		err := client.Client.MakeBucket(context.Background(), bucketName, minio.MakeBucketOptions{})
