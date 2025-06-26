@@ -15,3 +15,5 @@ func NewClient() *resend.Client {
 	}
 	return resend.NewClient(apiKey)
 }
+
+// this is a coment git 
