@@ -33,6 +33,7 @@ func NewClient() *MinioClient {
 	minioClient, err := minio.New(endpoint, &minio.Options{
 		Creds:  credentials.NewStaticV4(accessKeyID, secretKeyID, ""),
 		Secure: useSSL,
+
 	})
 
 	if err != nil {
@@ -68,7 +69,7 @@ func (client *MinioClient) CreateStorage() {
 		//log.Fatalf("create Storage Bucket exists err: %v\n", err)
 	}
 	if found {
-		fmt.Printf("Bucket exists.\n")
+		//fmt.Printf("Bucket exists.\n")
 	} else {
 		//fmt.Printf("Bucket does not exists.\n")
 		err := client.Client.MakeBucket(context.Background(), bucketName, minio.MakeBucketOptions{})
