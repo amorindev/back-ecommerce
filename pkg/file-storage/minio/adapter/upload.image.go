@@ -43,7 +43,8 @@ func (a *Adapter) UploadImage(ctx context.Context, fileName string, file []byte,
 	// * tambien podría ser un backet o carpeta por cada entidad
 	// * el nombre del bucket es general puede ir fuera y los nobres de la carpetas /products según DDD
 	//fmt.Printf("Size: %v\n", len(file))
-	_, err := a.MinioClient.PutObject(ctx, "auth-tmpl", fileName, fileReader, -1, options)
+	// ponerlo en un el env ecomm
+	_, err := a.MinioClient.PutObject(ctx, "ecomm", fileName, fileReader, -1, options)
 	if err != nil {
 		return err
 	}
