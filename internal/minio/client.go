@@ -27,7 +27,7 @@ func NewClient() *MinioClient {
 	secretKeyID := os.Getenv("MINIO_SECRET_KEY")
 
 	// ? ponerlo como .env -si para no cambiarrlo en produccuib
-	useSSL := false // * en railway podría ser true  por que es https o ngrok
+	useSSL := true // * en railway podría ser true  por que es https o ngrok
 
 	// * Initialize minio client
 	minioClient, err := minio.New(endpoint, &minio.Options{
