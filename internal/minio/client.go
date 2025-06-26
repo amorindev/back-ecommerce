@@ -22,15 +22,15 @@ type MinioClient struct {
 func NewClient() *MinioClient {
 
 	// verificar si es nulo
-	//endpoint := os.Getenv("MINIO_ENDPOINT")
+	endpoint := os.Getenv("MINIO_ENDPOINT")
 	accessKeyID := os.Getenv("MINIO_ACCESS_KEY")
 	secretKeyID := os.Getenv("MINIO_SECRET_KEY")
 
 	// ? ponerlo como .env -si para no cambiarrlo en produccuib
-	useSSL := true // * en railway podría ser true  por que es https o ngrok
+	useSSL := false // * en railway podría ser true  por que es https o ngrok
 
 	// * Initialize minio client
-	minioClient, err := minio.New("", &minio.Options{
+	minioClient, err := minio.New(endpoint, &minio.Options{
 		Creds:  credentials.NewStaticV4(accessKeyID, secretKeyID, ""),
 		Secure: useSSL,
 	})
