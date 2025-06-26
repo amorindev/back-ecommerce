@@ -73,7 +73,7 @@ func (client *MinioClient) CreateStorage() {
 		//fmt.Printf("Bucket does not exists.\n")
 		err := client.Client.MakeBucket(context.Background(), bucketName, minio.MakeBucketOptions{})
 		if err != nil {
-			log.Fatal("create Storage failed: %w\n", err)
+			log.Fatalf("create Storage failed: %s\n", err.Error())
 		}
 	}
 }
