@@ -6,15 +6,16 @@ import (
 
 	httpSrv "com.fernando/cmd/api/server"
 	//grpcSrv "com.fernando/cmd/grpc/server"
-	"github.com/joho/godotenv"
+	//"github.com/joho/godotenv"
 )
 
 func main() {
 
-	err := godotenv.Load(".env")
+	// de momento solo lo comento
+	/* err := godotenv.Load(".env")
 	if err != nil {
 		log.Fatalf("Failed to load .env file: %v", err)
-	}
+	} */
 
 	//defer postgresql.CloseConnection(data.DB) esto desde v1 me parece correcto
 
