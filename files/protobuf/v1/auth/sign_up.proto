@@ -1,0 +1,41 @@
+syntax = "proto3";
+
+// package name me parece que sirve solo para el .proto para diferneciar
+
+package authpb;
+
+import "user.proto";
+
+option go_package = "com.example/pkg/services/app/auth/grpc/gen";
+
+
+// el código generado por go se almacenará en este paquete
+// lo que le permite importarlo en otros archivos
+// option
+
+
+
+// como manejar las impotaciones por que user ira en protobuf/user
+// y el option la ruta donde se genera el gen pero debería ser gen no authgen
+// SignUpRequest SignInRequest son como nos ayudan a representar session auth entidades
+
+message SignUpRequestMessage {
+    string email = 1;
+    string password = 2;
+    string comfirm_password = 3;
+    // ? donde estara el phone User user o simplemente como campo por que el password email tambien es el user
+    // pero sabemos que el passwor des de auth dejemos simple como campo, e profile si puede ser como tipo 
+    // messaje Profile{}
+    // aqui estará el profile
+}
+
+//message SignUpProfileRequest {}
+
+
+message SignUpResponseMessage {
+    string provider = 1;
+    // tambien el proveedot?
+    User user = 2;
+    // profile entidad dentro de User?
+
+}

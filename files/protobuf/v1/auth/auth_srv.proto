@@ -1,0 +1,18 @@
+syntax = "proto3";
+
+package authpb;
+
+import "sign_in.proto";
+import "sign_up.proto";
+
+option go_package = "com.example/pkg/services/app/auth/grpc/gen";
+
+service AuthService {
+    rpc SignIn(SignInRequestMessage) returns (SignInResponseMessage){}
+    rpc SignUp(SignUpRequestMessage) returns (SignUpResponseMessage){}
+}
+
+// recuerda instalar las dependencias del archivos generados
+
+
+// este user es para auth ya qu todavía no puede separarlo e importar el user de otro paquete 

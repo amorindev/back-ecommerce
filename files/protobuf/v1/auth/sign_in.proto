@@ -1,0 +1,21 @@
+syntax = "proto3";
+
+package authpb;
+
+import "user.proto";
+
+option go_package = "com.example/pkg/services/app/auth/grpc/gen";
+
+message SignInRequestMessage {
+    string email = 1;
+    string password = 2;
+    bool remember_me = 3;
+}
+
+message SignInResponseMessage {
+    string provider = 1;
+    string access_token = 2;
+    string refresh_token = 3;
+    User user = 4;
+}
+ 

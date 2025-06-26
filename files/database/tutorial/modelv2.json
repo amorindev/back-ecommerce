@@ -1,0 +1,50 @@
+{
+  "COMMENT": "en el muchos pone un ['ObjectId'], suponiendo una coleción por repo, si es asi al crear un lista tambien debemos actualizar user lists campo de users, y la pequeña ventaja es tener la lista de ids, y al memento de consultar ya no filtrar por id si no obtener la lista que considad con algún elemento de mi lista",
+  "COMMENT2": "En users me parece no necesario agregar lists campo(al crear una lista modificariamos lists de users, en la relación muchos a muchos donde no tenga mas campos unicamente la referencia de las tablas agregar la lista de ids(2consultas),  en caso que la tabla tenga las referencias y otros atributos entonces agregar una nueva collección?",
+  "COMMENT3": "que pasa si users tiene lists agregar un metadata, ",
+  "COMMENT4": "se modfica a una lista por estrutura por que necesita el ref",
+  "COMMENT5": "agregar 1 - 1, y como usar el ref, mejor empesar solo con la lista de ObjectId",
+  "COMMENT6": "se podría agregar la collección intermedia y no tener el anidado, como seria el crud en ambos, para las consultas entre varias tablas o como sería en ambas situalciones cual me convendría, si se crea la collección intermedia es la única tabla o collección que se puede acceder mediante lookup desde las dos tablas que o generaron",
+  "COMMENT7": "la idea es equilibrar rendimiento y legibilidad",
+  "COMMENT8": "se puede hhacer un embedding sin crear la tabla intermedia en postgresql si tiene solo las referencias pero para que sea igual a mongo por legibilidad creare la tabla",
+  "COMMENT9": "estamos usando ref para no incluir el user_role colleccion y sabemos que es el único caso que se va a usar ",
+  "users": {
+    "_id": "ObjectId",
+    "nickname": "String",
+    "password": "String",
+    "picture": "String",
+    "COMMET": "al crear una lista agregar aqui mediante una transacción",
+    "lists": ["ObjectId"],
+    "lists2": [
+      {
+        "type": "ObjectId",
+        "ref": "lists"
+      }
+    ]
+  },
+  "lists": {
+    "_id": "ObjectId",
+    "name": "String",
+    "description": "String",
+    "gender": "String",
+    "user_id": "ObjectId",
+    "songs": ["ObjectId"]
+  },
+  "songs": {
+    "_id": "ObjectId",
+    "name": "String",
+    "duration": "Timestamp",
+    "lists": ["ObjectId"],
+    "artists": ["ObjectId"]
+  },
+  "artists": {
+    "_id": "ObjectId",
+    "name1": "String",
+    "name2": "String",
+    "lastname1": "String",
+    "lastname2": "String",
+    "songs": ["ObjectId"]
+  },
+  "list_song": {},
+  "song_artist": {}
+}

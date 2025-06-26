@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Verificación de Correo</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        line-height: 1.6;
+        color: #333;
+      }
+      .container {
+        max-width: 600px;
+        margin: 0 auto;
+        padding: 20px;
+        background-color: #f9f9f9;
+        border: 1px solid #ddd;
+      }
+      h1 {
+        color: #007bff;
+      }
+      .otp-code {
+        font-size: 1.5em;
+        font-weight: bold;
+        color: #007bff;
+        background-color: #e7f1ff;
+        padding: 10px;
+        display: inline-block;
+        border-radius: 5px;
+        margin: 20px 0;
+      }
+      .footer {
+        margin-top: 30px;
+        font-size: 0.9em;
+        color: #666;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1>{{.Name}}</h1>
+      <h1>Verificación de Correo Electrónico</h1>
+      <p>Hola, {{.Subject}}:</p>
+      <p>
+        Para completar tu registro o verificar tu dirección de correo electrónico, 
+        por favor utiliza el siguiente código de verificación (OTP):
+      </p>
+      <div class="otp-code">{{.Code}}</div>
+      <p>Este código expirará en unos minutos, así que úsalo lo antes posible.</p>
+      <p>Si tú no solicitaste esta verificación, simplemente ignora este mensaje.</p>
+      <div class="footer">
+        <p>&copy; 2025 Mi Empresa. Todos los derechos reservados.</p>
+      </div>
+    </div>
+  </body>
+</html>

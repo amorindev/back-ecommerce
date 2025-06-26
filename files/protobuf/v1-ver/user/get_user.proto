@@ -1,0 +1,18 @@
+syntax = "proto3";
+
+package userpb;
+
+// imports
+import "user.proto";
+
+
+// option
+option go_package = "com.example/pkg/services/app/user/grpc/gen2";
+
+message GetUserRequestMessage {
+    string access_token = 1;
+}
+
+message GetUserResponseMessage {
+    User user = 1;
+}

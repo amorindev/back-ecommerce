@@ -1,0 +1,34 @@
+GET http://localhost:8000/ping
+
+###
+POST http://localhost:8000/v1/auth/sign-up
+Content-Type: application/json
+
+{
+    "email": "@gmail.com",
+    "password": "123456",
+    "comfirm_password":"123456"
+}
+
+### 
+POST http://localhost:8000/v1/auth/sign-in
+Content-Type: application/json
+
+{
+    "email":"fernando@gmail.com",
+    "password":"123456",
+    "remember_me": false
+}
+
+
+
+{
+    "email": "test@gmail.com",
+    "password": "123456",
+    "comfirm_password":"123456"
+    "user": {
+        # para el phone opcional
+        "username":"",
+        "name":"test"
+    }
+}

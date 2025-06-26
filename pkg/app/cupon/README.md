@@ -1,0 +1,1 @@
+se puede usar en varias apps cupon de descuento

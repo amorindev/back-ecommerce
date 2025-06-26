@@ -1,0 +1,21 @@
+syntax = "proto3";
+
+package authpb;
+
+import "role.proto";
+import "google/protobuf/timestamp.proto";
+
+option go_package = "com.example/pkg/services/app/auth/grpc/gen";
+
+// ! IMPORTANTE DA VARIOES ERRORES POR LA ENUMERACIÓN DE LOS ATRIBUTOS 1 2 3
+//tengowrnings
+// Makefile:39: warning: overriding recipe for target 'gen2'
+//Makefile:20: warning: ignoring old recipe for target 'gen2'
+message User {
+    string id = 1;
+    string email = 2;
+    bool email_verified = 3;
+    repeated Role roles = 4;
+    google.protobuf.Timestamp created_at = 5;
+    google.protobuf.Timestamp updated_at = 6;
+}

@@ -1,0 +1,19 @@
+syntax = "proto3";
+
+package authpb;
+
+// imports
+import "user.proto";
+
+
+// option
+option go_package = "com.example/pkg/services/app/auth/grpc/gen";
+
+
+message GetUserRequestMessage {
+    string access_token = 1;
+}
+
+message GetUserResponseMessage {
+    User user = 1;
+}

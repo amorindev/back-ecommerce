@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Código de Verificación 2FA</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      color: #333;
+      margin: 0;
+      padding: 0;
+    }
+    .container {
+      max-width: 400px;
+      margin: 20px auto;
+      padding: 15px;
+      background: #f4f4f4;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+    }
+    h1 {
+      font-size: 1.2em;
+      color: #007bff;
+      margin-bottom: 10px;
+    }
+    p {
+      font-size: 0.95em;
+      margin: 8px 0;
+    }
+    .otp-code {
+      font-size: 1.2em;
+      font-weight: bold;
+      color: #007bff;
+      background: #e7f1ff;
+      padding: 6px 12px;
+      border-radius: 4px;
+      display: inline-block;
+      margin: 12px 0;
+    }
+    .footer {
+      font-size: 0.8em;
+      color: #777;
+      text-align: center;
+      margin-top: 15px;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Inicio de Sesión con 2FA</h1>
+    <p>Hola {{.Subject}},</p>
+    <p>Tu código para completar el inicio de sesión es:</p>
+    <div class="otp-code">{{.Code}}</div>
+    <p>Este código tiene una validez limitada. Si no solicitaste este inicio de sesión, puedes ignorar este mensaje.</p>
+    <div class="footer">
+      &copy; 2025 Mi Empresa
+    </div>
+  </div>
+</body>
+</html>

@@ -1,0 +1,18 @@
+syntax = "proto3";
+
+// ver todavía
+package authpb;
+
+option go_package = "com.example/pkg/services/app/auth/grpc/gen";
+
+message EmptyRequest{}
+
+// el problema que tengo con util donde se va generar en que service o donnde ver si afecta a dependencias
+// ya que solo esta en auth - o replicar en cada servicio que lo necesita UserEmptyRequest RoleEmptyRequest
+// por ejemplo
+
+// int64 fixed 64 ver los tipos mas adecuados
+
+//mensaje MyRequest {
+//other_package.SomeMessage some_data = 1;
+//}

@@ -1,0 +1,61 @@
+version: "3.9"
+
+services:
+  minio:
+    image: quay.io/minio/minio
+    container_name: minio
+    environment:
+      - MINIO_ROOT_USER=${MINIO_ROOT_USER}
+      - MINIO_ROOT_PASSWORD=${MINIO_ROOT_PASSWORD}
+    command: server /data --console-address ":${MINIO_CONSOLE_PORT}"
+    restart: unless-stopped
+    ports:
+      - "${MINIO_API_PORT}:${MINIO_API_PORT}"
+      - "${MINIO_CONSOLE_PORT}:${MINIO_CONSOLE_PORT}"
+    healthcheck:
+      test:
+        [
+          "CMD",
+          "curl",
+          "-f",
+          "http://localhost:${MINIO_API_PORT}/minio/health/live",
+        ]
+      interval: 30s
+      timeout: 20s
+      retries: 3
+
+  mongodb:
+    image: mongo:8
+    container_name: mongodatabase
+    environment:
+      # * no funciana cuando se agrega username y password
+      #- MONGO_INITDB_ROOT_USERNAME=${MONGO_INITDB_ROOT_USERNAME}
+      #- MONGO_INITDB_ROOT_PASSWORD=${MONGO_INITDB_ROOT_PASSWORD}
+      - MONGO_INITDB_DATABASE=${MONGO_INITDB_DATABASE}
+    healthcheck:
+      test: echo 'db.runCommand("ping").ok' | mongosh localhost:${MONGO_INITDB_PORT}/${MONGO_INITDB_DATABASE} --quiet
+      interval: 10s
+      timeout: 10s
+      retries: 5
+      start_period: 40s
+    ports:
+      - "27017:27017"
+    command: "--bind_ip_all --quiet --logpath /dev/null --replSet rs0"
+
+  # ? por que lo separa en otro contenedor
+  mongo-init:
+    image: mongo:8
+    restart: "no"
+    depends_on:
+      mongodb:
+        condition: service_healthy
+    command: >
+      mongosh --host mongodb:${MONGO_INITDB_PORT} --eval
+      '
+      rs.initiate( {
+        _id : "rs0",
+        members: [
+          { _id: 0, host: "mongodb:${MONGO_INITDB_PORT}" }
+        ]
+      })
+      '

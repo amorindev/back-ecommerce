@@ -1,0 +1,14 @@
+syntax = "proto3";
+
+package authpb;
+
+// imports
+import "get_user.proto";
+
+// optin cual es la ruta en el cual estará el paquete
+option go_package = "com.example/pkg/services/app/auth/grpc/gen";
+
+
+service UserService{
+    rpc GetUser(GetUserRequestMessage) returns (GetUserResponseMessage){};
+}

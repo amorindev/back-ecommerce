@@ -1,0 +1,11 @@
+syntax = "proto3";
+
+package authpb;
+
+option go_package = "com.example/pkg/services/app/auth/grpc/gen";
+
+// ui no convendria agregar created y updted pero si para labase de datos
+message Role {
+    string id = 1;
+    string name = 2;
+}

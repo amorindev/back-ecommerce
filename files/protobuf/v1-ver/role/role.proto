@@ -1,0 +1,10 @@
+syntax = "proto3";
+
+package rolepb;
+
+option go_package = "com.fernando/pkg/services/app/role/grpc/gen2";
+
+message Role {
+    string id = 1;
+    string name = 2;
+}

@@ -1,0 +1,22 @@
+syntax = "proto3";
+
+package authpb;
+
+option go_package = "com.example/pkg/services/app/auth/grpc/gen";
+
+
+// ------------------------------------------
+// SignInRequest SignUpRquest o responces nos ayudan a representar el auh y session
+// ------------------------------------------
+
+
+/* 
+en Auth model si tenemos access y refresh token por que solo tenemos 2 entidades
+message Auth {
+    string provider = 1;
+    // para el sign in 
+    string access_token = 2;
+    // for sign in
+    string refresh_token = 3;
+    User user = 4;
+} */

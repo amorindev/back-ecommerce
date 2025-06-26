@@ -1,0 +1,315 @@
+{
+    "count": 820,
+    "pages": 0,
+    "next": "http://localhost:8000/v1/products?page=11",
+    "previus": null,
+    "products": [
+        {
+            "id": "6807ff4a4471ea8194bc025b",
+            "name": "Zapatillas New Athletic Casual Dauscole Mujer",
+            "description": "Comodidad y estilo se unen en este modelo casual, ideal para el día a día",
+            "status": "active",
+            "created_at": "2025-04-22T20:42:49.618Z",
+            "updated_at": "2025-04-22T20:42:49.618Z",
+            "category_id": "6807b7e53ec7725d59a6505e",
+            "products": [
+                {
+                    "id": null,
+                    "stock": 10,
+                    "discount": 0,
+                    "rating": 5,
+                    "price": 100,
+                    "file_url": {
+                        "Scheme": "http",
+                        "Opaque": "",
+                        "User": null,
+                        "Host": "localhost:9000",
+                        "Path": "/ecomm-test/products/black-36.jpg",
+                        "RawPath": "",
+                        "OmitHost": false,
+                        "ForceQuery": false,
+                        "RawQuery": "X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=qUwgLlzSuN3wVsqqbVNh%2F20250422%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20250422T230306Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=c87790e84702df57f56466e0c11ee0e928957dc29fd237ff73371de1de535fb9",
+                        "Fragment": "",
+                        "RawFragment": ""
+                    },
+                    "img_url": "localhost:9000/products/black-36.jpg",
+                    "created_at": "2025-04-22T20:42:49.618Z",
+                    "updated_at": "2025-04-22T20:42:49.618Z",
+                    "options": null
+                },
+                {
+                    "id": null,
+                    "stock": 10,
+                    "discount": 0,
+                    "rating": 5,
+                    "price": 110,
+                    "file_url": {
+                        "Scheme": "http",
+                        "Opaque": "",
+                        "User": null,
+                        "Host": "localhost:9000",
+                        "Path": "/ecomm-test/products/black-37.jpg",
+                        "RawPath": "",
+                        "OmitHost": false,
+                        "ForceQuery": false,
+                        "RawQuery": "X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=qUwgLlzSuN3wVsqqbVNh%2F20250422%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20250422T230306Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=b15e2c581317c76ba01e417dd09d602f9b26679171678c48e9509da47d6d81a1",
+                        "Fragment": "",
+                        "RawFragment": ""
+                    },
+                    "img_url": "localhost:9000/products/black-36.jpg",
+                    "created_at": "2025-04-22T20:42:49.618Z",
+                    "updated_at": "2025-04-22T20:42:49.618Z",
+                    "options": null
+                },
+                {
+                    "id": null,
+                    "stock": 10,
+                    "discount": 0,
+                    "rating": 5,
+                    "price": 120,
+                    "file_url": {
+                        "Scheme": "http",
+                        "Opaque": "",
+                        "User": null,
+                        "Host": "localhost:9000",
+                        "Path": "/ecomm-test/products/black-38.jpg",
+                        "RawPath": "",
+                        "OmitHost": false,
+                        "ForceQuery": false,
+                        "RawQuery": "X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=qUwgLlzSuN3wVsqqbVNh%2F20250422%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20250422T230306Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=47f40cd465aa48bc6479281f38d94ca5573c56e8ef959efc291d8e7531039b71",
+                        "Fragment": "",
+                        "RawFragment": ""
+                    },
+                    "img_url": "localhost:9000/products/black-36.jpg",
+                    "created_at": "2025-04-22T20:42:49.618Z",
+                    "updated_at": "2025-04-22T20:42:49.618Z",
+                    "options": null
+                },
+                {
+                    "id": null,
+                    "stock": 10,
+                    "discount": 0,
+                    "rating": 5,
+                    "price": 130,
+                    "file_url": {
+                        "Scheme": "http",
+                        "Opaque": "",
+                        "User": null,
+                        "Host": "localhost:9000",
+                        "Path": "/ecomm-test/products/lead-36.jpg",
+                        "RawPath": "",
+                        "OmitHost": false,
+                        "ForceQuery": false,
+                        "RawQuery": "X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=qUwgLlzSuN3wVsqqbVNh%2F20250422%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20250422T230306Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=f4b2dd14a9e648452f7bfe7d1b33711db3233aca677898c7cff8bb711a987c2a",
+                        "Fragment": "",
+                        "RawFragment": ""
+                    },
+                    "img_url": "localhost:9000/products/black-36.jpg",
+                    "created_at": "2025-04-22T20:42:49.618Z",
+                    "updated_at": "2025-04-22T20:42:49.618Z",
+                    "options": null
+                },
+                {
+                    "id": null,
+                    "stock": 10,
+                    "discount": 0,
+                    "rating": 5,
+                    "price": 140,
+                    "file_url": {
+                        "Scheme": "http",
+                        "Opaque": "",
+                        "User": null,
+                        "Host": "localhost:9000",
+                        "Path": "/ecomm-test/products/lead-37.jpg",
+                        "RawPath": "",
+                        "OmitHost": false,
+                        "ForceQuery": false,
+                        "RawQuery": "X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=qUwgLlzSuN3wVsqqbVNh%2F20250422%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20250422T230306Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=cf86183a97dcafee30f8a719e894437edd674dd4236b31241a0d0ef4e07793d2",
+                        "Fragment": "",
+                        "RawFragment": ""
+                    },
+                    "img_url": "localhost:9000/products/black-36.jpg",
+                    "created_at": "2025-04-22T20:42:49.618Z",
+                    "updated_at": "2025-04-22T20:42:49.618Z",
+                    "options": null
+                },
+                {
+                    "id": null,
+                    "stock": 10,
+                    "discount": 0,
+                    "rating": 5,
+                    "price": 150,
+                    "file_url": {
+                        "Scheme": "http",
+                        "Opaque": "",
+                        "User": null,
+                        "Host": "localhost:9000",
+                        "Path": "/ecomm-test/products/lead-38.jpg",
+                        "RawPath": "",
+                        "OmitHost": false,
+                        "ForceQuery": false,
+                        "RawQuery": "X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=qUwgLlzSuN3wVsqqbVNh%2F20250422%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20250422T230306Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=c7517c31dc8df841e41dd39c7bbffbfa48b7856cfb343d4c70938661371fbd4f",
+                        "Fragment": "",
+                        "RawFragment": ""
+                    },
+                    "img_url": "localhost:9000/products/black-36.jpg",
+                    "created_at": "2025-04-22T20:42:49.618Z",
+                    "updated_at": "2025-04-22T20:42:49.618Z",
+                    "options": null
+                }
+            ],
+            "variations": [
+                {
+                    "name": "COLOR",
+                    "values": [
+                        "BLACK",
+                        "LEAD"
+                    ]
+                },
+                {
+                    "name": "SIZE",
+                    "values": [
+                        "36",
+                        "37",
+                        "38"
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "6807ff4b4471ea8194bc026e",
+            "name": "Zapatillas New Athletic Running Croil145 Hombre",
+            "description": "Para hombre combinan un estilo deportivo moderno con materiales livianos",
+            "status": "active",
+            "created_at": "2025-04-22T20:42:50.669Z",
+            "updated_at": "2025-04-22T20:42:50.669Z",
+            "category_id": "6807b7e53ec7725d59a6505d",
+            "products": [
+                {
+                    "id": null,
+                    "stock": 10,
+                    "discount": 0,
+                    "rating": 5,
+                    "price": 100,
+                    "file_url": {
+                        "Scheme": "http",
+                        "Opaque": "",
+                        "User": null,
+                        "Host": "localhost:9000",
+                        "Path": "/ecomm-test/products/black-39.jpg",
+                        "RawPath": "",
+                        "OmitHost": false,
+                        "ForceQuery": false,
+                        "RawQuery": "X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=qUwgLlzSuN3wVsqqbVNh%2F20250422%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20250422T230306Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=5ecbbc96f92d005fc9b11c81bac75fa3b2b87a6019fac6e45981b243a6ef5f09",
+                        "Fragment": "",
+                        "RawFragment": ""
+                    },
+                    "img_url": "localhost:9000/products/black-39.jpg",
+                    "created_at": "2025-04-22T20:42:50.669Z",
+                    "updated_at": "2025-04-22T20:42:50.669Z",
+                    "options": null
+                },
+                {
+                    "id": null,
+                    "stock": 0,
+                    "discount": 0,
+                    "rating": 5,
+                    "price": 110,
+                    "file_url": {
+                        "Scheme": "http",
+                        "Opaque": "",
+                        "User": null,
+                        "Host": "localhost:9000",
+                        "Path": "/ecomm-test/products/black-40.jpg",
+                        "RawPath": "",
+                        "OmitHost": false,
+                        "ForceQuery": false,
+                        "RawQuery": "X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=qUwgLlzSuN3wVsqqbVNh%2F20250422%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20250422T230306Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=f846e291a3a7772974acc1940278a82672a3997c1447dfad96587db2a5c6595d",
+                        "Fragment": "",
+                        "RawFragment": ""
+                    },
+                    "img_url": "localhost:9000/products/black-39.jpg",
+                    "created_at": "2025-04-22T20:42:50.669Z",
+                    "updated_at": "2025-04-22T20:42:50.669Z",
+                    "options": null
+                },
+                {
+                    "id": null,
+                    "stock": 10,
+                    "discount": 0,
+                    "rating": 5,
+                    "price": 120,
+                    "file_url": {
+                        "Scheme": "http",
+                        "Opaque": "",
+                        "User": null,
+                        "Host": "localhost:9000",
+                        "Path": "/ecomm-test/products/black-41.jpg",
+                        "RawPath": "",
+                        "OmitHost": false,
+                        "ForceQuery": false,
+                        "RawQuery": "X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=qUwgLlzSuN3wVsqqbVNh%2F20250422%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20250422T230306Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=591c3e4ecc68bf4d2bdeb02fda955038b8b4240224bef4607c16469de2a00a38",
+                        "Fragment": "",
+                        "RawFragment": ""
+                    },
+                    "img_url": "localhost:9000/products/black-39.jpg",
+                    "created_at": "2025-04-22T20:42:50.669Z",
+                    "updated_at": "2025-04-22T20:42:50.669Z",
+                    "options": null
+                }
+            ],
+            "variations": [
+                {
+                    "name": "COLOR",
+                    "values": [
+                        "BLACK"
+                    ]
+                },
+                {
+                    "name": "SIZE",
+                    "values": [
+                        "39",
+                        "40",
+                        "41"
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "6807ff4b4471ea8194bc0278",
+            "name": "Gorra New Athletic Roma Negro Unisex",
+            "description": "Es una opción ideal para quienes buscan protección solar con estilo",
+            "status": "active",
+            "created_at": "2025-04-22T20:42:51.105Z",
+            "updated_at": "2025-04-22T20:42:51.105Z",
+            "category_id": "6807b7e53ec7725d59a6505f",
+            "products": [
+                {
+                    "id": null,
+                    "stock": 10,
+                    "discount": 0,
+                    "rating": 5,
+                    "price": 120,
+                    "file_url": {
+                        "Scheme": "http",
+                        "Opaque": "",
+                        "User": null,
+                        "Host": "localhost:9000",
+                        "Path": "/ecomm-test/products/img.jpg",
+                        "RawPath": "",
+                        "OmitHost": false,
+                        "ForceQuery": false,
+                        "RawQuery": "X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=qUwgLlzSuN3wVsqqbVNh%2F20250422%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20250422T230306Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=abeec53a131fe8b8863eee41799c62dbf6ef923fa6311e905a5cbaf6628e9b46",
+                        "Fragment": "",
+                        "RawFragment": ""
+                    },
+                    "img_url": "localhost:9000/products/img.jpg",
+                    "created_at": "2025-04-22T20:42:51.105Z",
+                    "updated_at": "2025-04-22T20:42:51.105Z",
+                    "options": null
+                }
+            ],
+            "variations": null
+        }
+    ]
+}

@@ -1,0 +1,19 @@
+{
+  "users": {
+    "_id": "ObjectId",
+    "nickname": "String",
+    "password": "String",
+    "picture": "String"
+  },
+  "lists": {
+    "_id": "ObjectId",
+    "name": "String",
+    "description": "String",
+    "gender": "String",
+    "user_id": "ObjectId"
+  },
+  "list_song": {},
+  "songs": {},
+  "song_artist": {},
+  "artists": {}
+}
