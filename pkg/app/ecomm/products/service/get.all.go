@@ -2,8 +2,6 @@ package service
 
 import (
 	"context"
-	"errors"
-	"os"
 
 	"com.fernando/pkg/app/ecomm/products/model"
 )
@@ -29,12 +27,6 @@ func (s *Service) GetAll(ctx context.Context, limit int, page int) ([]*model.Pro
 	// lo mismo tener un campo o tabla donde no sea necesario ir contando cada ves si no al crear
 	// ver las reponsabilidades por que si delete el producto lo mismo  para la red socil
 	// tambien se debe reflejar CRUD reflejado
-
-	minioEndpoint := os.Getenv("MINIO_ENDPOINT")
-	if minioEndpoint == "" {
-		return nil, 0, 0, errors.New("product service Getalll err no MIIOENDPOINT set variable")
-	}
-
 
 	// * Asignar imágenes
 	for _, product := range products {
