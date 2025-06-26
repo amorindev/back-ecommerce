@@ -1,0 +1,216 @@
+{
+  "products": [
+    {
+      "name": "Zapatillas New Athletic Casual Dauscole Mujer",
+      "description": "Comodidad y estilo se unen en este modelo casual, ideal para el día a día",
+      "status": "active",
+      "category_name": "MUJER",
+      "product_items": [
+        {
+          "stock": 10,
+          "discount": 0,
+          "rating": 5,
+          "price": 100.0,
+          "content_type": "image/jpeg",
+          "options": [
+            {
+              "name": "COLOR",
+              "value": "BLACK"
+            },
+            {
+              "name": "SIZE",
+              "value": "36"
+            }
+          ]
+        },
+        {
+          "stock": 10,
+          "discount": 0,
+          "rating": 5,
+          "price": 110.0,
+          "content_type": "image/jpeg",
+
+          "options": [
+            {
+              "name": "COLOR",
+              "value": "BLACK"
+            },
+            {
+              "name": "SIZE",
+              "value": "37"
+            }
+          ]
+        },
+        {
+          "stock": 10,
+          "discount": 0,
+          "rating": 5,
+          "price": 120.0,
+          "content_type": "image/jpeg",
+
+          "options": [
+            {
+              "name": "COLOR",
+              "value": "BLACK"
+            },
+            {
+              "name": "SIZE",
+              "value": "38"
+            }
+          ]
+        },
+        {
+          "stock": 10,
+          "discount": 0,
+          "rating": 5,
+          "price": 130.0,
+          "content_type": "image/jpeg",
+
+          "options": [
+            {
+              "name": "COLOR",
+              "value": "LEAD"
+            },
+            {
+              "name": "SIZE",
+              "value": "36"
+            }
+          ]
+        },
+        {
+          "stock": 10,
+          "discount": 0,
+          "rating": 5,
+          "price": 140.0,
+          "content_type": "image/jpeg",
+
+          "options": [
+            {
+              "name": "COLOR",
+              "value": "LEAD"
+            },
+            {
+              "name": "SIZE",
+              "value": "37"
+            }
+          ]
+        },
+        {
+          "stock": 10,
+          "discount": 0,
+          "rating": 5,
+          "price": 150.0,
+          "content_type": "image/jpeg",
+
+          "options": [
+            {
+              "name": "COLOR",
+              "value": "LEAD"
+            },
+            {
+              "name": "SIZE",
+              "value": "38"
+            }
+          ]
+        }
+      ],
+      "variations": [
+        {
+          "name": "COLOR",
+          "values": ["BLACK", "LEAD"]
+        },
+        {
+          "name": "SIZE",
+          "values": ["36", "37", "38"]
+        }
+      ]
+    },
+    {
+      "name": "Zapatillas New Athletic Running Croil145 Hombre",
+      "description": "Para hombre combinan un estilo deportivo moderno con materiales livianos",
+      "status": "active",
+      "category_name": "HOMBRE",
+      "product_items": [
+        {
+          "stock": 10,
+          "discount": 0,
+          "rating": 5,
+          "price": 100.0,
+          "content_type": "image/jpeg",
+
+          "options": [
+            {
+              "name": "COLOR",
+              "value": "BLACK"
+            },
+            {
+              "name": "SIZE",
+              "value": "39"
+            }
+          ]
+        },
+        {
+          "stock": 0,
+          "discount": 0,
+          "rating": 5,
+          "price": 110.0,
+          "content_type": "image/jpeg",
+
+          "options": [
+            {
+              "name": "COLOR",
+              "value": "BLACK"
+            },
+            {
+              "name": "SIZE",
+              "value": "40"
+            }
+          ]
+        },
+        {
+          "stock": 10,
+          "discount": 0,
+          "rating": 5,
+          "price": 120.0,
+          "content_type": "image/jpeg",
+
+          "options": [
+            {
+              "name": "COLOR",
+              "value": "BLACK"
+            },
+            {
+              "name": "SIZE",
+              "value": "41"
+            }
+          ]
+        }
+      ],
+      "variations": [
+        {
+          "name": "COLOR",
+          "values": ["BLACK"]
+        },
+        {
+          "name": "SIZE",
+          "values": ["39", "40", "41"]
+        }
+      ]
+    },
+    {
+      "name": "Gorra New Athletic Roma Negro Unisex",
+      "description": "Es una opción ideal para quienes buscan protección solar con estilo",
+      "status": "active",
+      "category_name": "UNISEX",
+      "product_items": [
+        {
+          "stock": 10,
+          "discount": 0,
+          "rating": 5,
+          "price": 120.0,
+          "content_type": "image/jpeg"
+        }
+      ]
+    } 
+  ]
+}

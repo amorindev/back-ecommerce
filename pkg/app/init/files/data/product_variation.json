@@ -1,0 +1,29 @@
+{
+  "name": "String",
+  "Descripiton": "String",
+  "img_general": "String",
+  "cat_id": "ObjectID",
+  "comment": "como lo relaciono con el producto",
+  "product_items": [
+    {
+      "id": "String",
+      "stock": "Integer",
+      "discount": "double",
+      "ratinng": "short/double",
+      "precio": "String",
+      "image_url": "String",
+      "color":"String",
+      "size": "String"
+    }
+  ],
+  "variation": [
+    {
+      "color": "String",
+      "talla": "String"
+    },
+    {
+      "color": "String",
+      "talla": "String"
+    }
+  ]
+}

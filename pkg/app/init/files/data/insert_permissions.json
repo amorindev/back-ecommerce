@@ -1,0 +1,17 @@
+{
+  "data": [
+    {
+      "role_name": "ADMIN",
+      "name_permissions": [
+        "create-product",
+        "update-product",
+        "delete-product",
+        "read-product"
+      ]
+    },
+    {
+      "role_name": "USER",
+      "name_permissions": ["read-product"]
+    }
+  ]
+}

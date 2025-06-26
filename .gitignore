@@ -32,6 +32,6 @@ go.work.sum
 tmp/
 
 # postgresql database
-data
+# data cuidado otros folderes se pueden llamar data como los json inserts 
 
 #?.vscode

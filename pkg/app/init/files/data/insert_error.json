@@ -1,0 +1,71 @@
+{
+  "test": [
+    {
+      "name": "Zapatillas New Athletic Lifestyle Truiden70 Mujer",
+      "description": "Diseñadas para la aventura, estas zapatillas New Athletic Mountain64 para mujer ofrecen durabilidad, tracción y comodidad en terrenos exigentes.",
+      "status": "active",
+      "category_name": "MUJER",
+      "product_items": [
+        {
+          "stock": 60,
+          "discount": 0,
+          "rating": 5,
+          "price": 136.0,
+          "content_type": "image/jpeg",
+          "options": [
+            {
+              "name": "COLOR",
+              "value": "WHITE"
+            },
+            {
+              "name": "SIZE",
+              "value": "39"
+            }
+          ]
+        },
+        {
+          "stock": 38,
+          "discount": 0,
+          "rating": 5,
+          "price": 225.0,
+          "content_type": "image/jpeg",
+          "options": [
+            {
+              "name": "COLOR",
+              "value": "WHITE"
+            },
+            {
+              "name": "SIZE",
+              "value": "40"
+            }
+          ]
+        }
+      ],
+      "variations": [
+        {
+          "name": "COLOR",
+          "values": ["WHITE"]
+        },
+        {
+          "name": "SIZE",
+          "values": ["39", "40"]
+        }
+      ]
+    },
+    {
+      "name": "Medias Pack De 3 New Athletic Tobilleras16 Niño",
+      "description": "Este pack de 3 medias tobilleras New Athletic para niño brinda comodidad, ajuste suave y ventilación adecuada.",
+      "status": "active",
+      "category_name": "NIÑOS",
+      "product_items": [
+        {
+          "stock": 23,
+          "discount": 5,
+          "rating": 4,
+          "price": 25.0,
+          "content_type": "image/jpeg"
+        }
+      ]
+    }
+  ]
+}

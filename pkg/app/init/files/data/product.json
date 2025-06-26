@@ -1,0 +1,16 @@
+{
+    "id": "String",
+    "name": "String",
+    "Descripiton": "String",
+    "img_general": "String",
+    "cat_id": "ObjectID",
+    "product": {
+      "id": "String",
+      "stock": "Integer",
+      "discount": "double",
+      "ratinng": "short/double",
+      "precio": "String",
+      "image_url": "String"
+    },
+    "variations": null
+  }
