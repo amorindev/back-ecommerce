@@ -1,0 +1,37 @@
+{
+  "stores": [
+    {
+      "name": "sucursal los-olivos",
+      "address_line": "Arte 278",
+      "description": "Tienda ubicada en el corazón de Los Olivos, ideal para compras rápidas y atención personalizada.",
+      "city": "Los Olivos",
+      "state": "Lima",
+      "country": "Perú",
+      "postal_code": "15304",
+      "latitude": -11.981279646075015,
+      "longitude": -77.07515727728605
+    },
+    {
+      "name": "sucursal san-miguel",
+      "address_line": "Av. la Marina 2931",
+      "description": "Sucursal moderna con amplio stock y atención especializada cerca al centro comercial Plaza San Miguel.",
+      "city": "San miguel",
+      "state": "Lima",
+      "country": "Perú",
+      "postal_code": "15087",
+      "latitude": -12.076834471729285,
+      "longitude": -77.09524769335985
+    },
+    {
+      "name": "sucursal Lima",
+      "address_line": "Jr. Independencia 1040",
+      "description": "Tienda céntrica en Breña, perfecta para los vecinos del distrito y zonas cercanas.",
+      "city": "Lima",
+      "state": "Lima",
+      "country": "Perú",
+      "postal_code": "15083",
+      "latitude": -12.057571925280405,
+      "longitude": -77.05314069986343
+    }
+  ]
+}
