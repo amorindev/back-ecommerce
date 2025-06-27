@@ -5,17 +5,24 @@ import (
 	"os"
 
 	httpSrv "com.fernando/cmd/api/server"
+	"github.com/joho/godotenv"
 	//grpcSrv "com.fernando/cmd/grpc/server"
 	//"github.com/joho/godotenv"
 )
 
 func main() {
 
-	// de momento solo lo comento
-	/* err := godotenv.Load(".env")
-	if err != nil {
-		log.Fatalf("Failed to load .env file: %v", err)
-	} */
+	appEnv := os.Getenv("APP_ENV")
+	if appEnv == "" {
+		log.Fatal("environment variable APP_ENV is not set")
+	}
+
+	if appEnv != "prod" {
+		err := godotenv.Load(".env")
+		if err != nil {
+			log.Fatalf("Failed to load .env file: %v", err)
+		}
+	}
 
 	//defer postgresql.CloseConnection(data.DB) esto desde v1 me parece correcto
 

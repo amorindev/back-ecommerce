@@ -57,6 +57,13 @@ func NewClient() *MinioClient {
 	minioClient.Client.MakeBucket()
 } */
 
+//useSSL := os.Getenv("MINIO_USE_SSL") == "true" false mejor por defecto  o no se 
+/*
+if endpoint == "" || accessKeyID == "" || secretKeyID == "" {
+		log.Fatal("MinIO environment variables are not properly set")
+	}
+*/
+
 func (client *MinioClient) CreateStorage() {
 	// crear bucket desde aqui o como base de datos desde el config
 	bucketName := os.Getenv("MINIO_BUCKET_NAME")
