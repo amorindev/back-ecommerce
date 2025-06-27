@@ -1,0 +1,25 @@
+{
+  "onboarding": [
+    {
+      "title": "Make Payment",
+      "text": "Securely complete your purchase using Stripe. We support all major payment methods to ensure a smooth and safe checkout.",
+      "file_name": "ecomm_payments.svg",
+      "expires_at": "2028-01-01T00:00:00Z",
+      "content_type": "image/svg+xml"
+    },
+    {
+      "title": "Choose Products",
+      "text": "Select the items that best match your interests. This will help us personalize your experience",
+      "file_name": "ecomm_products.svg",
+      "expires_at": "2028-01-01T00:00:00Z",
+      "content_type": "image/svg+xml"
+    },
+    {
+      "title": "Unlock Gifts & Discounts",
+      "text": "Enjoy exclusive offers, discounts, and surprise gifts just for you. Start saving as you shop!",
+      "file_name": "ecomm_gift.svg",
+      "expires_at": "2028-01-01T00:00:00Z",
+      "content_type": "image/svg+xml"
+    }
+  ]
+}
